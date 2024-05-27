@@ -1,3 +1,6 @@
+### Solution with pseudocode
+
+```javascript
 // 1. Write operations on the calculator
 // 1.1 Create a selector for the display
 const display = document.querySelector('input')
@@ -52,3 +55,4 @@ buttons.forEach((button) => {
     }
   })
 })
+```
