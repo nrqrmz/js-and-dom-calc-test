@@ -67,7 +67,7 @@ buttons.forEach((button) => {
 
 ### refactor solution using math.js
 ```javascript
-const mathJSCalculate = str => mathJSCalculate.evaluate(str)
+const mathJSCalculate = str => math.evaluate(str)
 
 buttons.forEach((button) => {
   button.addEventListener('click', (event) => {
