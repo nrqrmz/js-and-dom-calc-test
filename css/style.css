@@ -6,7 +6,7 @@
 
 /* --- Fonts & colors --- */
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: monospace;
   /* font-family: "Open Sans", "Helvetica", "sans-serif"; */
   margin: 0;
 }

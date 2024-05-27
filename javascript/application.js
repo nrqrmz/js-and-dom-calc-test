@@ -1,16 +1,15 @@
-// 2. Clear the display when clicking on 'C'
-// 2.1 Define a clearDisplay function
-const clearDisplay = () => {
-  display.value = ''
-}
-// 3. Compute operations when clicking on '='
-
 // 1. Write operations on the calculator
 // 1.1 Create a selector for the display
 const display = document.querySelector('input')
 
 // 1.2 Create selectors for the buttons
 const buttons = document.querySelectorAll('a')
+
+// 2. Clear the display when clicking on 'C'
+// 2.1 Define a clearDisplay function
+const clearDisplay = () => display.value = ''
+
+// 3. Compute operations when clicking on '='
 
 // 1.3 Add event listeners to the buttons
 buttons.forEach((button) => {
