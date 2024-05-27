@@ -24,7 +24,11 @@ const calculate = (str) => {
   }
 }
 
-const mathJSCalculate = str => mathJSCalculate.evaluate(str)
+const mathJSCalculate = str => math.evaluate(str)
+
+const removeLast = (str) => {
+  return str.slice(0, str.length - 1)
+}
 
 buttons.forEach((button) => {
   button.addEventListener('click', (event) => {
@@ -32,6 +36,8 @@ buttons.forEach((button) => {
 
     if (button.innerText == 'C') {
       clearDisplay()
+    } else if (button.innerText == '←') {
+      display.value = removeLast(display.value)
     } else if (button.innerText == '=') {
       display.value = mathJSCalculate(display.value)
     } else {
