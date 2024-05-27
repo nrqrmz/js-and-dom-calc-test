@@ -56,3 +56,30 @@ buttons.forEach((button) => {
   })
 })
 ```
+
+### import math.js
+```html
+<head>
+  <!-- import math.js in the last line of the head -->
+  <script src="https://unpkg.com/mathjs/lib/browser/math.js"></script>
+</head>
+```
+
+### refactor solution using math.js
+```javascript
+const mathJSCalculate = str => mathJSCalculate.evaluate(str)
+
+buttons.forEach((button) => {
+  button.addEventListener('click', (event) => {
+    event.preventDefault()
+
+    if (button.innerText == 'C') {
+      clearDisplay()
+    } else if (button.innerText == '=') {
+      display.value = mathJSCalculate(display.value)
+    } else {
+      display.value += button.innerText
+    }
+  })
+})
+```

@@ -24,6 +24,8 @@ const calculate = (str) => {
   }
 }
 
+const mathJSCalculate = str => mathJSCalculate.evaluate(str)
+
 buttons.forEach((button) => {
   button.addEventListener('click', (event) => {
     event.preventDefault()
@@ -31,7 +33,7 @@ buttons.forEach((button) => {
     if (button.innerText == 'C') {
       clearDisplay()
     } else if (button.innerText == '=') {
-      display.value = calculate(display.value)
+      display.value = mathJSCalculate(display.value)
     } else {
       display.value += button.innerText
     }
